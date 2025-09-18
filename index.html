@@ -3,11 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taller Elvis</title>
-  <!-- Fuente estilo stencil -->
+  <title>Taller Elvis - Reparación de Electrodomésticos Sabanalarga, Atlántico</title>
+  <meta name="description" content="Taller Elvis en Sabanalarga, Atlántico. Especialistas en reparación de lavadoras, abanicos, licuadoras, taladros y pulidoras. Servicio a domicilio con 15 años de experiencia.">
+  <meta name="keywords" content="reparación electrodomésticos Sabanalarga, taller lavadoras Atlántico, arreglo abanicos, servicio técnico licuadoras, reparación taladros pulidoras">
+  <meta name="author" content="Taller Elvis">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Taller Elvis - Reparación de Electrodomésticos Sabanalarga">
+  <meta property="og:description" content="Servicio técnico especializado en lavadoras, abanicos, licuadoras, taladros y pulidoras. Atención a domicilio en Sabanalarga, Atlántico.">
+  <meta property="og:type" content="business.business">
+  <meta property="og:url" content="https://tallerelvis.com">
+  <meta property="og:locale" content="es_CO">
+  <meta name="geo.region" content="CO-AT">
+  <meta name="geo.placename" content="Sabanalarga, Atlántico">
+  <meta name="geo.position" content="10.6380;-74.9211">
+  <!-- Preload critical fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&family=Inter:wght@300;400;600;700&display=swap" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Taller Elvis",
+    "image": "https://tallerelvis.com/logo.jpg",
+    "description": "Taller especializado en reparación y mantenimiento de electrodomésticos y herramientas eléctricas en Sabanalarga, Atlántico.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Cra. 21 #28-39",
+      "addressLocality": "Sabanalarga",
+      "addressRegion": "Atlántico",
+      "addressCountry": "CO"
+    },
+    "telephone": "+57-301-313-3740",
+    "url": "https://tallerelvis.com",
+    "areaServed": "Sabanalarga, Atlántico",
+    "serviceType": "Reparación de Electrodomésticos",
+    "priceRange": "$$",
+    "openingHours": "Mo-Sa 08:00-18:00",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de Reparación",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Reparación de Lavadoras"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Reparación de Abanicos"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Reparación de Licuadoras"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Reparación de Taladros y Pulidoras"
+          }
+        }
+      ]
+    }
+  }
+  </script>
   <style>
     :root {
       /* Colores modo claro */
@@ -56,9 +124,78 @@
       transition: all 0.3s ease;
     }
 
+        /* ==== Servicios ==== */
+    .porque {
+      padding: 30px 15px;
+      text-align: center;
+      background: var(--bg-primary);
+      position: relative;
+    }
+
+    .porque h2 {
+      margin-bottom: 60px;
+      color: var(--text-primary);
+    }
+
+        .banner {
+      background: var(--bg-secondary);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px var(--shadow-light);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      margin:30px;
+    }
+
+    .banner::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, var(--shadow-light), transparent);
+      transform: rotate(45deg);
+      transition: all 0.5s ease;
+      opacity: 0;
+    }
+
+    .banner:hover::before {
+      opacity: 1;
+    }
+
+    .banner:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px var(--shadow-medium);
+    }
+
+    .banner-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 15px;
+      color: var(--accent-red);
+    }
+
+    .banner h3 {
+      margin-top: 10px;
+      color: var(--text-primary);
+      font-size: 1.3rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .banner p {
+      position: relative;
+      z-index: 2;
+      color: var(--text-secondary);
+    }
+
     h1, h2 {
       text-shadow: 1px 1px 1px var(--shadow-dark);
       font-size: 42px;
+      font-family: 'Stardos Stencil', sans-serif;
     }
 
     /* ==== Animaciones ==== */
@@ -121,7 +258,6 @@
 
     header h1 {
       margin: 0;
-      font-family: 'Stardos Stencil', sans-serif;
       font-size: clamp(1.2rem, 4vw, 1.8rem);
       color: var(--accent-red);
       display: flex;
@@ -262,7 +398,6 @@
     .hero h2 {
       font-size: clamp(1.8rem, 5vw, 2.5rem);
       margin-bottom: 15px;
-      font-family: 'Stardos Stencil', sans-serif;
       color: var(--accent-yellow);
       animation: fadeInUp 1s ease-out 0.3s both;
     }
@@ -561,7 +696,6 @@
     .modal h3 {
       color: var(--text-primary);
       margin-bottom: 20px;
-      font-family: 'Stardos Stencil', sans-serif;
       font-size: 1.8rem;
       text-shadow: 1px 1px 2px var(--shadow-light);
     }
@@ -720,6 +854,7 @@
       <nav id="nav">
         <a href="#inicio" onclick="closeNav()">Inicio</a>
         <a href="#servicios" onclick="closeNav()">Servicios</a>
+        <a href="#porque" onclick="closeNav()">Por que</a>
         <a href="#contacto" onclick="closeNav()">Contacto</a>
       </nav>
     </div>
@@ -736,8 +871,8 @@
       <div class="hero-slide" style="background-image: url('taladro.jpg" viewBox="0 0 1200 800"><rect fill="%232e7d32" width="1200" height="800"/><circle fill="%23ff1744" opacity="0.3" cx="500" cy="400" r="170"/><circle fill="%23ffeb3b" opacity="0.3" cx="1000" cy="200" r="120"/></svg></div>
     </div>
     <div class="hero-content">
-      <h2>Reparaciones y Mantenimiento</h2>
-      <p>Lavadoras, abanicos, licuadoras, taladros y pulidoras</p>
+      <h2>Servicio Técnico Especializado en Electrodomésticos</h2>
+      <p>Reparación y mantenimiento profesional de lavadoras, abanicos, licuadoras, taladros y pulidoras en Sabanalarga. Servicio a domicilio con garantía.</p>
       <a href="#contacto" class="btn">Contáctanos</a>
     </div>
     <div class="hero-indicators">
@@ -752,48 +887,78 @@
   <!-- Servicios -->
   <div id="servicios"></div>
   <section class="servicios">
-    <h2>Nuestros Servicios</h2>
+    <h2>Nuestros Servicios Especializados</h2>
     <div class="grid">
       <div class="card animate-in">
         <div class="card-icon">
           <i data-lucide="fan"></i>
         </div>
-        <h3>Abanicos</h3>
-        <p>Reparación y mantenimiento de abanicos de mesa, pared y techo.</p>
-      </div>
+        <h3>Reparación de Abanicos</h3>
+        <p>Servicio técnico especializado en abanicos de mesa, pared y techo. Reparamos motores, aspas y sistemas eléctricos con garantía.</p>
+          <meta itemprop="serviceType" content="Reparación de electrodomésticos">
+          <meta itemprop="areaServed" content="Sabanalarga, Colombia">
+     </div>
       <div class="card animate-in">
         <div class="card-icon">
           <i data-lucide="zap"></i>
         </div>
-        <h3>Licuadoras</h3>
-        <p>Arreglo de motores, cuchillas y sistemas eléctricos.</p>
+        <h3>Reparación de Licuadoras</h3>
+        <p>Diagnóstico y reparación de licuadoras de todas las marcas. Arreglo de motores, cuchillas y sistemas eléctricos con repuestos originales.</p>
+          <meta itemprop="serviceType" content="Reparación de electrodomésticos">
+          <meta itemprop="areaServed" content="Sabanalarga, Colombia">
       </div>
       <div class="card animate-in">
         <div class="card-icon">
           <i data-lucide="drill"></i>
         </div>
-        <h3>Taladros y Pulidoras</h3>
-        <p>Diagnóstico y reparación de herramientas eléctricas.</p>
+        <h3>Reparación de Taladros y Pulidoras</h3>
+        <p>Servicio técnico en herramientas eléctricas industriales y domésticas. Diagnóstico profesional y reparación con garantía extendida.</p>
+          <meta itemprop="serviceType" content="Reparación de herramientas eléctricas">
+          <meta itemprop="areaServed" content="Sabanalarga, Colombia">
       </div>
       <div class="card animate-in">
         <div class="card-icon">
           <i data-lucide="washing-machine"></i>
         </div>
-        <h3>Lavadoras</h3>
-        <p>Solución de problemas eléctricos y mecánicos en todas las marcas.</p>
+        <h3>Reparación de Lavadoras</h3>
+        <p>Especialistas en lavadoras de todas las marcas. Reparamos problemas eléctricos, mecánicos y electrónicos. Servicio a domicilio inmediato.</p>
+          <meta itemprop="serviceType" content="Reparación de electrodomésticos">
+          <meta itemprop="areaServed" content="Sabanalarga, Colombia">
       </div>
     </div>
   </section>
 
+        </section>
+        <div id="porque"></div>
+         <h2 class="porque">¿Por qué elegir Taller Elvis?</h2>
+        <div class="banner">
+        <div>
+        <h3>✓ Servicio a Domicilio</h3>
+        <p>Especialistas en lavadoras de todas las marcas. Reparamos problemas eléctricos, mecánicos y electrónicos. Servicio a domicilio inmediato.</p>
+        </div>
+        <div>
+        <h3>✓ Más de 10 años de experiencia</h3>
+        <p>Técnicos certificados y especializados</p>
+        </div>
+         <div>
+        <h3>✓ Garantía en reparaciones</h3>
+        <p>Especialistas en lavadoras de todas las marcas. Reparamos problemas eléctricos, mecánicos y electrónicos. Servicio a domicilio inmediato.</p>
+      </div>
+       <div>
+        <h3>✓ Cotización gratuita</h3>
+        <p>Diagnóstico sin costo y precios justos</p>
+      </div>
+      </div>
+      </section>
   <!-- Contacto -->
   <div id="contacto"></div>
   <section class="contacto">
     <div class="contacto-content">
-      <h2>Contáctanos</h2>
-      <p>Servicio a domicilio - ¡La calidad no se improvisa!</p>
+      <h2>Contáctanos - Servicio Inmediato</h2>
+      <p>Servicio técnico a domicilio en toda Sabanalarga. ¡La calidad y confianza que necesitas!</p>
       <form id="contactForm">
-        <input type="text" id="nombre" placeholder="Tu nombre" required>
-        <input type="tel" id="telefono" placeholder="Tu teléfono" required>
+        <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+        <input type="tel" id="telefono" placeholder="Tu numero de teléfono" required>
         <textarea id="mensaje" placeholder="Describe el problema o servicio que necesitas..." rows="4" required></textarea>
         <button type="submit">
           <i data-lucide="send"></i>
@@ -801,6 +966,8 @@
         </button>
       </form>
     </div>
+      <meta itemprop="contactType" content="customer service">
+      <meta itemprop="availableLanguage" content="Spanish">
   </section>
 
   <!-- Modal de Confirmación -->
@@ -826,6 +993,9 @@
     <p>&copy; 2025 Taller Elvis - Todos los derechos reservados</p>
   </footer>
 
+  <!-- Lucide Icons - Cargado al final para mejor rendimiento -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
   <script>
     // Variables globales
     let currentSlide = 0;
@@ -833,14 +1003,42 @@
     const slides = document.querySelectorAll('.hero-slide');
     const indicators = document.querySelectorAll('.indicator');
     let formData = {};
+    let lucideLoaded = false;
 
-    // Inicializar Lucide Icons
-    lucide.createIcons();
+    // Función para inicializar iconos cuando Lucide esté listo
+    function initializeLucideIcons() {
+      if (typeof lucide !== 'undefined' && !lucideLoaded) {
+        lucide.createIcons();
+        lucideLoaded = true;
+        updateThemeIcon();
+      }
+    }
+
+    // Intentar inicializar iconos inmediatamente
+    initializeLucideIcons();
+
+    // Si no está listo, esperar a que se cargue
+    if (!lucideLoaded) {
+      document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(initializeLucideIcons, 100);
+      });
+      
+      // Backup: intentar cada 500ms hasta que se cargue (máximo 5 segundos)
+      let attempts = 0;
+      const maxAttempts = 10;
+      const checkLucide = setInterval(function() {
+        if (lucideLoaded || attempts >= maxAttempts) {
+          clearInterval(checkLucide);
+          return;
+        }
+        initializeLucideIcons();
+        attempts++;
+      }, 500);
+    }
 
     // Inicializar tema
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
-    updateThemeIcon();
 
     // Función para cambiar tema
     function toggleTheme() {
@@ -853,15 +1051,19 @@
     }
 
     function updateThemeIcon() {
+      if (!lucideLoaded) return;
+      
       const themeIcon = document.getElementById('theme-icon');
       const currentTheme = document.documentElement.getAttribute('data-theme');
       
-      if (currentTheme === 'dark') {
-        themeIcon.setAttribute('data-lucide', 'moon');
-      } else {
-        themeIcon.setAttribute('data-lucide', 'sun');
+      if (themeIcon) {
+        if (currentTheme === 'dark') {
+          themeIcon.setAttribute('data-lucide', 'moon');
+        } else {
+          themeIcon.setAttribute('data-lucide', 'sun');
+        }
+        lucide.createIcons();
       }
-      lucide.createIcons();
     }
 
     // Funciones del slider
@@ -917,7 +1119,7 @@
 
 *Solicitud de servicio - Taller Elvis*
 
-📝 *Nombre:* ${formData.nombre}
+👤 *Nombre:* ${formData.nombre}
 📞 *Teléfono:* ${formData.telefono}
 
 💬 *Mensaje:*
@@ -976,7 +1178,7 @@ ${formData.mensaje}
       }
     });
 
-    // Animaciones de scroll
+    // Animaciones de scroll con mejor rendimiento
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
@@ -1013,14 +1215,23 @@ ${formData.mensaje}
     // Inicializar slider
     startSlideshow();
 
-    // Efecto parallax suave en hero (opcional)
-    window.addEventListener('scroll', function() {
+    // Efecto parallax optimizado
+    let ticking = false;
+    function updateParallax() {
       const scrolled = window.pageYOffset;
       const hero = document.querySelector('.hero');
-      const rate = scrolled * 0.3;
       
       if (hero && scrolled < window.innerHeight) {
+        const rate = scrolled * 0.3;
         hero.style.transform = `translateY(${rate}px)`;
+      }
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(updateParallax);
+        ticking = true;
       }
     });
   </script>

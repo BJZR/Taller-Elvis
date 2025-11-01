@@ -1,0 +1,62 @@
+# robots.txt para Taller Elvis - Reparación de Electrodomésticos
+# https://elvistaller.surge.sh/robots.txt
+
+# Permitir acceso a todos los bots de búsqueda
+User-agent: *
+Allow: /
+
+# Permitir específicamente a los principales motores de búsqueda
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Bloquear acceso a archivos y directorios sensibles
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.bak$
+
+# Bloquear acceso a archivos de configuración
+Disallow: /*.config$
+Disallow: /*.conf$
+Disallow: /*.ini$
+
+# Permitir acceso a recursos importantes
+Allow: /styles.css
+Allow: /main.js
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Crawl-delay para evitar sobrecarga del servidor
+Crawl-delay: 1
+
+# Ubicación del sitemap
+Sitemap: https://elvistaller.surge.sh/sitemap.xml
+
+# Información adicional de contacto
+# Email: elvisjosezambranoberdugo@gmail.com
+# Teléfono: +57-301-313-3740
+# Ubicación: Sabanalarga, Atlántico, Colombia

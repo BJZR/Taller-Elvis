@@ -19,13 +19,13 @@
   /* Colores modo oscuro */
   --bg-primary: #1a1a1a;
   --bg-secondary: #2d2d2d;
-  --bg-header: #1b5e20;
-  --bg-footer: #0d3f0f;
-  --text-primary: #e0e0e0;
-  --text-secondary: #b0b0b0;
+  --bg-header: #2e7d32;
+  --bg-footer: #1b5e20;
+  --text-primary: #333333;
+  --text-secondary: #666666;
   --text-white: #ffffff;
-  --accent-red: #ff4569;
-  --accent-yellow: #ffd54f;
+  --accent-red: #ff1744;
+  --accent-yellow: #ffeb3b;
   --shadow-light: rgba(255, 255, 255, 0.05);
   --shadow-medium: rgba(255, 255, 255, 0.1);
   --shadow-dark: rgba(0, 0, 0, 0.8);

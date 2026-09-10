@@ -211,16 +211,14 @@ button {
   position: sticky;
   top: 0;
   z-index: 1100;
-  background: color-mix(in srgb, var(--surface) 82%, transparent);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
   border-bottom: 1px solid var(--border);
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .header.scrolled {
   box-shadow: var(--shadow-md);
-  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  background: var(--surface);
 }
 
 .header-inner {

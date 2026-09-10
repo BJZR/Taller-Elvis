@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taller Elvis - Reparación de Electrodomésticos Sabanalarga, Atlántico</title>
-  <meta name="google-site-verification" content="gZop1TgPprf9xAq-vtz9GSIP65yeqE3-pbXyoUNEbfE" />
+  <title>Taller Elvis - Reparación de Electrodomésticos en Sabanalarga, Atlántico</title>
+  <meta name="google-site-verification" content="n20iiQ-a9KvqNGYcQKQe8uJJXt_-_aue193NklACoKM" />
   <meta name="description" content="Taller Elvis en Sabanalarga, Atlántico. Especialistas en reparación de lavadoras, abanicos, licuadoras, taladros y pulidoras. Servicio a domicilio con 15 años de experiencia.">
   <meta name="keywords" content="reparación electrodomésticos Sabanalarga, taller lavadoras Atlántico, arreglo abanicos, servicio técnico licuadoras, reparación taladros pulidoras">
   <meta name="author" content="Taller Elvis">
@@ -17,11 +17,10 @@
   <meta name="geo.region" content="CO-AT">
   <meta name="geo.placename" content="Sabanalarga, Atlántico">
   <meta name="geo.position" content="10.6380;-74.9211">
+  <meta name="theme-color" content="#14532d">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&family=Stardos+Stencil:wght@700&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
   <link href="styles/styles.css" rel="stylesheet">
-  <!-- Preload critical fonts -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&family=Inter:wght@300;400;600;700&display=swap" as="style">
-  <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,202 +40,373 @@
     "areaServed": "Sabanalarga, Atlántico",
     "serviceType": "Reparación de Electrodomésticos",
     "priceRange": "$$",
-    "openingHours": "Mo-Sa 08:00-18:00",
+    "openingHours": "Mo-Sa 07:00-17:00",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Servicios de Reparación",
       "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Reparación de Lavadoras"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Reparación de Abanicos"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Reparación de Licuadoras"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Reparación de Taladros y Pulidoras"
-          }
-        }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de Lavadoras" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de Abanicos" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de Licuadoras" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de Taladros y Pulidoras" } }
       ]
     }
   }
   </script>
-  </head>
+</head>
 <body>
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="topbar-item">
+        <i data-lucide="map-pin" aria-hidden="true"></i>
+        Cra. 21 #28-39, Sabanalarga
+      </span>
+      <span class="topbar-item topbar-hours">
+        <i data-lucide="clock" aria-hidden="true"></i>
+        Lun – Sáb · 7:00 a.m. – 5:00 p.m.
+      </span>
+      <a class="topbar-item topbar-phone" href="tel:+573013133740">
+        <i data-lucide="phone" aria-hidden="true"></i>
+        +57 301 313 3740
+      </a>
+    </div>
+  </div>
+
   <!-- Header -->
-  <header>
-    <h1>
-      <div class="header-icon">
-        <i data-lucide="settings" class="gear"></i>
-        <i data-lucide="wrench" class="tools"></i>
-      </div>
-      TALLER ELVIS
-    </h1>
-    <div style="display: flex; align-items: center;">
-      <button class="theme-toggle" onclick="toggleTheme()">
-        <i data-lucide="sun" id="theme-icon"></i>
-      </button>
-      <button class="nav-toggle" onclick="toggleNav()">☰</button>
-      <nav id="nav">
-        <a href="#inicio" onclick="closeNav()">Inicio</a>
-        <a href="#servicios" onclick="closeNav()">Servicios</a>
-        <a href="#porque" onclick="closeNav()">Por que</a>
-        <a href="#contacto" onclick="closeNav()">Contacto</a>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Taller Elvis - Inicio">
+        <span class="brand-icon" aria-hidden="true">
+          <i data-lucide="settings" class="brand-gear"></i>
+          <i data-lucide="wrench" class="brand-wrench"></i>
+        </span>
+        <span class="brand-name">Taller <em>Elvis</em></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#porque" class="nav-link">Por qué nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <a href="#contacto" class="nav-cta">
+          <i data-lucide="message-circle" aria-hidden="true"></i>
+          Cotizar ahora
+        </a>
       </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <i data-lucide="moon" id="themeIcon"></i>
+        </button>
+        <button class="icon-btn nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <i data-lucide="menu" id="menuIcon"></i>
+        </button>
+      </div>
+
+      <div class="nav-backdrop" id="navBackdrop"></div>
     </div>
   </header>
 
-  <!-- Hero con Slider -->
-  <div id="inicio"></div>
-  <section class="hero">
-    <div class="hero-slider">
-      <div class="hero-slide active" style="background-image: url('img/abanico.jpg')"></div>
-      <div class="hero-slide" style="background-image: url('img/licuadora.jpg')"></div>
-      <div class="hero-slide" style="background-image: url('img/pulidora.jpg')"></div>
-      <div class="hero-slide" style="background-image: url('img/lavadora.jpg')"></div>
-      <div class="hero-slide" style="background-image: url('img/taladro.jpg')"></div>
-    </div>
-    <div class="hero-content">
-      <h2>Servicio Técnico Especializado en Electrodomésticos</h2>
-      <p>Reparación y mantenimiento profesional de lavadoras, abanicos, licuadoras, taladros y pulidoras en Sabanalarga. Servicio a domicilio con garantía.</p>
-      <a href="#contacto" class="btn">Contáctanos</a>
-    </div>
-    <div class="hero-indicators">
-      <div class="indicator active" onclick="goToSlide(0)"></div>
-      <div class="indicator" onclick="goToSlide(1)"></div>
-      <div class="indicator" onclick="goToSlide(2)"></div>
-      <div class="indicator" onclick="goToSlide(3)"></div>
-      <div class="indicator" onclick="goToSlide(4)"></div>
-    </div>
-  </section>
+  <main id="inicio">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-slider" aria-hidden="true">
+        <div class="hero-slide active" style="background-image:url('img/abanico.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('img/lavadora.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('img/pulidora.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('img/licuadora.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('img/taladro.jpg')"></div>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
 
-  <!-- Servicios -->
-  <div id="servicios"></div>
-  <section class="servicios">
-    <h2>Nuestros Servicios Especializados</h2>
-    <div class="grid">
-      <div class="card animate-in">
-        <div class="card-icon">
-          <i data-lucide="fan"></i>
+      <div class="container hero-content">
+        <p class="hero-badge">
+          <i data-lucide="badge-check" aria-hidden="true"></i>
+          +15 años de experiencia
+        </p>
+        <h1 class="hero-title">Tu electrodoméstico vuelve a la vida</h1>
+        <p class="hero-text">
+          Reparación y mantenimiento profesional de lavadoras, abanicos, licuadoras, taladros y
+          pulidoras en Sabanalarga. <strong>Servicio a domicilio con garantía.</strong>
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">
+            <i data-lucide="wrench" aria-hidden="true"></i>
+            Solicitar servicio
+          </a>
+          <a href="https://wa.me/573013133740?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20electrodom%C3%A9stico" class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+            WhatsApp directo
+          </a>
         </div>
-        <h3>Reparación de Abanicos</h3>
-        <p>Servicio técnico especializado en abanicos de mesa, pared y techo. Reparamos motores y sistemas eléctricos con garantía.</p>
-          <meta itemprop="serviceType" content="Reparación de electrodomésticos">
-          <meta itemprop="areaServed" content="Sabanalarga, Colombia">
-     </div>
-      <div class="card animate-in">
-        <div class="card-icon">
-          <i data-lucide="zap"></i>
-        </div>
-        <h3>Reparación de Licuadoras</h3>
-        <p>Diagnóstico y reparación de licuadoras de todas las marcas. Arreglo de motores, cuchillas y sistemas eléctricos con repuestos originales.</p>
-          <meta itemprop="serviceType" content="Reparación de electrodomésticos">
-          <meta itemprop="areaServed" content="Sabanalarga, Colombia">
+        <ul class="hero-trust">
+          <li><i data-lucide="shield-check" aria-hidden="true"></i> Garantía en reparaciones</li>
+          <li><i data-lucide="truck" aria-hidden="true"></i> Servicio a domicilio</li>
+          <li><i data-lucide="tags" aria-hidden="true"></i> Precios asequibles</li>
+        </ul>
       </div>
-      <div class="card animate-in">
-        <div class="card-icon">
-          <i data-lucide="drill"></i>
-        </div>
-        <h3>Reparación de Taladros y Pulidoras</h3>
-        <p>Servicio técnico en herramientas eléctricas industriales y domésticas. Diagnóstico profesional y reparación con garantía extendida.</p>
-          <meta itemprop="serviceType" content="Reparación de herramientas eléctricas">
-          <meta itemprop="areaServed" content="Sabanalarga, Colombia">
+
+      <div class="hero-indicators" role="tablist" aria-label="Imágenes de servicios">
+        <button class="indicator active" data-slide="0" aria-label="Ir a imagen 1" tabindex="-1" aria-hidden="true"></button>
+        <button class="indicator" data-slide="1" aria-label="Ir a imagen 2" tabindex="-1" aria-hidden="true"></button>
+        <button class="indicator" data-slide="2" aria-label="Ir a imagen 3" tabindex="-1" aria-hidden="true"></button>
+        <button class="indicator" data-slide="3" aria-label="Ir a imagen 4" tabindex="-1" aria-hidden="true"></button>
+        <button class="indicator" data-slide="4" aria-label="Ir a imagen 5" tabindex="-1" aria-hidden="true"></button>
       </div>
-      <div class="card animate-in">
-        <div class="card-icon">
-          <i data-lucide="washing-machine"></i>
+      <a href="#servicios" class="scroll-hint" aria-label="Desplazarse a servicios">
+        <i data-lucide="chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="Cifras del taller">
+      <div class="container stats-grid">
+        <div class="stat reveal">
+          <span class="stat-value" data-count="15">0</span>
+          <span class="stat-suffix">+</span>
+          <p class="stat-label">Años de experiencia</p>
         </div>
-        <h3>Reparación de Lavadoras</h3>
-        <p>Especialistas en lavadoras de todas las marcas. Reparamos problemas eléctricos, mecánicos y electrónicos. Servicio a domicilio inmediato.</p>
-          <meta itemprop="serviceType" content="Reparación de electrodomésticos">
-          <meta itemprop="areaServed" content="Sabanalarga, Colombia">
+        <div class="stat reveal">
+          <span class="stat-value" data-count="5000">0</span>
+          <span class="stat-suffix">+</span>
+          <p class="stat-label">Reparaciones realizadas</p>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-value" data-count="100">0</span>
+          <span class="stat-suffix">%</span>
+          <p class="stat-label">Garantía profesional</p>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-value" data-count="7">0</span>
+          <span class="stat-suffix">días</span>
+          <p class="stat-label">Atención a la semana</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-eyebrow">Nuestros servicios</p>
+          <h2 class="section-title">Reparamos lo que otros no pueden</h2>
+          <p class="section-sub">Diagnóstico y cotización a un precio asequible. Sin costos ocultos y con garantía real en cada reparación.</p>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true"><i data-lucide="washing-machine"></i></span>
+            <h3>Reparación de Lavadoras</h3>
+            <p>Especialistas en lavadoras de todas las marcas. Solucionamos fallas eléctricas, mecánicas y electrónicas. Servicio a domicilio inmediato.</p>
+            <span class="service-tag">Más solicitado</span>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true"><i data-lucide="fan"></i></span>
+            <h3>Reparación de Abanicos</h3>
+            <p>Servicio técnico en abanicos de mesa, pared y techo. Reparación de motores, aspas y sistema eléctrico con garantía.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true"><i data-lucide="zap"></i></span>
+            <h3>Reparación de Licuadoras</h3>
+            <p>Diagnóstico y reparación de licuadoras de todas las marcas: motores, cuchillas y circuitos con repuestos originales.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true"><i data-lucide="drill"></i></span>
+            <h3>Taladros y Pulidoras</h3>
+            <p>Herramientas eléctricas industriales y domésticas. Diagnóstico profesional y reparación con garantía extendida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por qué nosotros -->
+    <section class="section why" id="porque">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-eyebrow">¿Por qué elegirnos?</p>
+          <h2 class="section-title">La confianza tiene nombre propio</h2>
+          <p class="section-sub">Más de una década cuidando los hogares de Sabanalarga y alrededores.</p>
+        </header>
+
+        <div class="why-list">
+          <article class="why-item reveal">
+            <span class="why-number">01</span>
+            <div>
+              <h3>Servicio a domicilio</h3>
+              <p>Vamos hasta tu casa en toda Sabanalarga. No tienes que moverte ni cargar tu electrodoméstico.</p>
+            </div>
+          </article>
+          <article class="why-item reveal">
+            <span class="why-number">02</span>
+            <div>
+              <h3>Más de 10 años de experiencia</h3>
+              <p>Técnicos certificados que conocen cada marca y cada falla. Diagnóstico acertado a la primera.</p>
+            </div>
+          </article>
+          <article class="why-item reveal">
+            <span class="why-number">03</span>
+            <div>
+              <h3>Garantía en reparaciones</h3>
+              <p>Respaldo real: si el problema persiste, volvemos a revisarlo sin costo. Así trabajamos.</p>
+            </div>
+          </article>
+          <article class="why-item reveal">
+            <span class="why-number">04</span>
+            <div>
+              <h3>Precios justos</h3>
+              <p>Cotizamos tu reparación al mejor precio, sin letra pequeña ni sorpresas al final.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="why-banner reveal">
+          <p>¿Tu equipo no aparece en la lista?</p>
+          <a class="btn btn-light" href="#contacto">Cuéntanos qué tienes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="section-eyebrow">Contacto</p>
+          <h2 class="section-title">Cotiza tu reparación hoy</h2>
+          <p class="section-sub">Cotizamos tu reparación a un precio asequible. Cuéntanos qué necesitas y te respondemos a la brevedad por WhatsApp.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon" aria-hidden="true"><i data-lucide="phone"></i></span>
+              <div>
+                <span class="contact-label">Teléfono</span>
+                <a href="tel:+573013133740">+57 301 313 3740</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true"><i data-lucide="map-pin"></i></span>
+              <div>
+                <span class="contact-label">Dirección</span>
+                <span>Cra. 21 #28-39, Sabanalarga, Atlántico</span>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true"><i data-lucide="clock"></i></span>
+              <div>
+                <span class="contact-label">Horario</span>
+                <span>Lunes a sábado · 7:00 a.m. – 5:00 p.m.</span>
+              </div>
+            </li>
+          </ul>
+
+          <a class="btn btn-whatsapp btn-lg" href="https://wa.me/573013133740" target="_blank" rel="noopener">
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+            Escribir por WhatsApp
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <h3>Envía tu solicitud</h3>
+
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Carlos Pérez" autocomplete="name" required>
+            <small class="error-msg" data-error-for="nombre"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 300 123 4567" autocomplete="tel" inputmode="tel" minlength="7" maxlength="15" required>
+            <small class="error-msg" data-error-for="telefono"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Describe el problema</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Qué electrodoméstico es y qué falla presenta..." rows="4" required></textarea>
+            <small class="error-msg" data-error-for="mensaje"></small>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+            <i data-lucide="send" aria-hidden="true"></i>
+            <span>Enviar por WhatsApp</span>
+          </button>
+          <p class="form-note">Al enviar serás redirigido a WhatsApp para confirmar tu mensaje.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="brand brand-footer">
+          <span class="brand-icon" aria-hidden="true">
+            <i data-lucide="settings" class="brand-gear"></i>
+            <i data-lucide="wrench" class="brand-wrench"></i>
+          </span>
+          <span class="brand-name brand-name-footer">Taller <em>Elvis</em></span>
+        </a>
+        <p class="footer-text">
+          Taller de reparación de electrodomésticos y herramientas eléctricas en Sabanalarga, Atlántico.
+          Calidad, garantía y confianza desde hace más de 15 años.
+        </p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul class="footer-links">
+          <li><a href="#servicios">Reparación de lavadoras</a></li>
+          <li><a href="#servicios">Reparación de abanicos</a></li>
+          <li><a href="#servicios">Reparación de licuadoras</a></li>
+          <li><a href="#servicios">Taladros y pulidoras</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+573013133740">+57 301 313 3740</a></li>
+          <li><span>Cra. 21 #28-39, Sabanalarga</span></li>
+          <li><span>Lun – Sáb · 7:00 a.m. – 5:00 p.m.</span></li>
+          <li><a href="https://wa.me/573013133740" target="_blank" rel="noopener">WhatsApp directo</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-
-        </section>
-        <div id="porque"></div>
-         <h2 class="porque">¿Por qué elegir Taller Elvis?</h2>
-        <div class="banner">
-        <div>
-        <h3>✓ Servicio a Domicilio</h3>
-        <p>Especialistas en lavadoras de todas las marcas. Reparamos problemas eléctricos, mecánicos y electrónicos. Servicio a domicilio inmediato.</p>
-        </div>
-        <div>
-        <h3>✓ Más de 10 años de experiencia</h3>
-        <p>Técnicos certificados y especializados</p>
-        </div>
-         <div>
-        <h3>✓ Garantía en reparaciones</h3>
-        <p>Especialistas en lavadoras de todas las marcas. Reparamos problemas eléctricos, mecánicos y electrónicos. Servicio a domicilio inmediato.</p>
-      </div>
-       <div>
-        <h3>✓ Cotización gratuita</h3>
-        <p>Diagnóstico sin costo y precios justos</p>
-      </div>
-      </div>
-      </section>
-  <!-- Contacto -->
-  <div id="contacto"></div>
-  <section class="contacto">
-    <div class="contacto-content">
-      <h2>Contáctanos - Servicio Inmediato</h2>
-      <p>Servicio técnico a domicilio en toda Sabanalarga. ¡La calidad y confianza que necesitas!</p>
-      <form id="contactForm">
-        <input type="text" id="nombre" placeholder="Tu nombre completo" required>
-        <input type="tel" id="telefono" placeholder="Tu numero de teléfono" required>
-        <textarea id="mensaje" placeholder="Describe el problema o servicio que necesitas..." rows="4" required></textarea>
-        <button type="submit">
-          <i data-lucide="send"></i>
-          Enviar
-        </button>
-      </form>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Taller Elvis · Todos los derechos reservados</p>
     </div>
-      <meta itemprop="contactType" content="customer service">
-      <meta itemprop="availableLanguage" content="Spanish">
-  </section>
+  </footer>
 
-  <!-- Modal de Confirmación -->
-  <div id="confirmModal" class="modal">
+  <!-- Botones flotantes -->
+  <a href="https://wa.me/573013133740?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n" class="fab fab-whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i data-lucide="message-circle" aria-hidden="true"></i>
+  </a>
+  <button class="fab fab-top" id="backToTop" aria-label="Volver arriba">
+    <i data-lucide="arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Modal de confirmación -->
+  <div class="modal" id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-content">
-      <h3>Confirmar Envío</h3>
-      <p>Vamos a enviar sus datos por medio de WhatsApp para brindarle un servicio más rápido y personalizado. ¿Está de acuerdo?</p>
-      <div class="modal-buttons">
-        <button class="modal-btn confirm" onclick="confirmarEnvio()">
-          <i data-lucide="check"></i>
-          <span>Sí, enviar por WhatsApp</span>
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">
+        <i data-lucide="x" aria-hidden="true"></i>
+      </button>
+      <h3 id="modalTitle">Confirmar envío</h3>
+      <p>Enviaremos tu solicitud por WhatsApp para darte una respuesta más rápida y personalizada. ¿Estás de acuerdo?</p>
+      <div class="modal-actions">
+        <button class="btn btn-whatsapp" id="confirmBtn">
+          <i data-lucide="check" aria-hidden="true"></i>
+          Sí, enviar
         </button>
-        <button class="modal-btn cancel" onclick="cerrarModal()">
-          <i data-lucide="x"></i>
-          <span>Cancelar</span>
-        </button>
+        <button class="btn btn-ghost" id="cancelBtn">Cancelar</button>
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Taller Elvis - Todos los derechos reservados</p>
-  </footer>
-
-  <!-- Lucide Icons - Cargado al final para mejor rendimiento -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script src="logic/main.js"></script>
 </body>

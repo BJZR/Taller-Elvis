@@ -54,7 +54,7 @@ Allow: /*.webp$
 Crawl-delay: 1
 
 # Ubicación del sitemap
-Sitemap: https://elvistaller.surge.sh/sitemap.xml
+Sitemap: https://elvistaller.qd.je/sitemap.xml
 
 # Información adicional de contacto
 # Email: elvisjosezambranoberdugo@gmail.com

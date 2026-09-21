@@ -6,7 +6,7 @@
   
   <!-- Página Principal -->
   <url>
-    <loc>https://elvistaller.surge.sh/</loc>
+    <loc>https://elvistaller.qd.je/</loc>
     <lastmod>2025-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
   
   <!-- Sección Inicio -->
   <url>
-    <loc>https://elvistaller.surge.sh/#inicio</loc>
+    <loc>https://elvistaller.qd.je/#inicio</loc>
     <lastmod>2025-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
   
   <!-- Sección Servicios -->
   <url>
-    <loc>https://elvistaller.surge.sh/#servicios</loc>
+    <loc>https://elvistaller.qd.je/#servicios</loc>
     <lastmod>2025-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -30,7 +30,7 @@
   
   <!-- Sección Por Qué Elegir Taller Elvis -->
   <url>
-    <loc>https://elvistaller.surge.sh/#porque</loc>
+    <loc>https://elvistaller.qd.je/#porque</loc>
     <lastmod>2025-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -38,7 +38,7 @@
   
   <!-- Sección Contacto -->
   <url>
-    <loc>https://elvistaller.surge.sh/#contacto</loc>
+    <loc>https://elvistaller.qd.je/#contacto</loc>
     <lastmod>2025-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -46,28 +46,28 @@
   
   <!-- Servicios Específicos -->
   <url>
-    <loc>https://elvistaller.surge.sh/servicios/reparacion-abanicos</loc>
+    <loc>https://elvistaller.qd.je/servicios/reparacion-abanicos</loc>
     <lastmod>2025-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://elvistaller.surge.sh/servicios/reparacion-licuadoras</loc>
+    <loc>https://elvistaller.qd.je/servicios/reparacion-licuadoras</loc>
     <lastmod>2025-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://elvistaller.surge.sh/servicios/reparacion-taladros-pulidoras</loc>
+    <loc>https://elvistaller.qd.je/servicios/reparacion-taladros-pulidoras</loc>
     <lastmod>2025-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://elvistaller.surge.sh/servicios/reparacion-lavadoras</loc>
+    <loc>https://elvistaller.qd.je/servicios/reparacion-lavadoras</loc>
     <lastmod>2025-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
